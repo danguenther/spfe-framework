@@ -1,0 +1,12 @@
+[submodule "extern/privdev18-ak2-aby"]
+	path = extern/privdev18-ak2-aby
+	url = https://bitbucket.org/encryptogroup/privdev18-ak2-aby.git
+[submodule "src/tests/lib/googletest"]
+	path = src/tests/lib/googletest
+	url = https://github.com/google/googletest/
+[submodule "extern/privdev18-ak2-uc"]
+	path = extern/privdev18-ak2-uc
+	url = https://bitbucket.org/encryptogroup/privdev18-ak2-uc
+[submodule "extern/privdev18-ak2-cbmc-gc"]
+	path = extern/privdev18-ak2-cbmc-gc
+	url = https://bitbucket.org/encryptogroup/privdev18-ak2-cbmc-gc
