@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 # folder including all your public and private c programs
 PROJECT=circuits/insurance
 
@@ -41,15 +45,15 @@ if $TEST;
 then
 	echo $'\r'$'\r'"===CIRCUIT TESTS==="$'\r' >> ${TESTRESULTFILE};
 fi
-	for circuit in $PROJECT/*.c; 
-		do 
+	for circuit in $PROJECT/*.c;
+		do
 		specifications="";
 		if [ -e "${circuit%.c}.conf" ]
 		then
 			specifications=`cat ${circuit%.c}.conf`;
 		fi
 		$CBMCGC "$circuit" --minimization-time-limit ${CBMC_MINIMIZATION_TIME} ${specifications};
-		if $TEST; 
+		if $TEST;
 		then
 			if [ -e "${circuit%.c}.spec" ]
 			then
@@ -86,6 +90,3 @@ fi;
 
 #run ABY as Server and Client in new terminals
 xterm -hold -e $ABY -r 0 -f "${PROJECT}/${MERGE_FILE%.merge}".circuit -e "${PROJECT}"/"${MERGE_FILE%.merge}".circuit.prog -z "${PROJECT}"/serverInputFile.txt & xterm -hold -e $ABY -r 1 -f "${PROJECT}/${MERGE_FILE%.merge}.circuit" -e "${PROJECT}"/"${MERGE_FILE%.merge}".circuit.prog;
-
-
-

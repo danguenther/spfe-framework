@@ -1,5 +1,15 @@
 # Car Insurance Calculator
 
+### Building the circuit
+
+Assuming the framework has been built (see top-level README), the car
+insurance calculator can be compiled using the command in the
+top-level directory:
+
+```
+bash make.sh
+```
+
 ### Description
 
 This directory contains the car insurance example mentioned in our
@@ -15,7 +25,7 @@ The composition of all public boolean circuits and UCs is defined in
 the `insurance.merge`. The syntax of this file is described in the
 following section.
 
-### Merge File Syntax
+#### Merge File Syntax
 
 The syntax for Merger files is line-based. All lines starting with `#`
 are comments and ignored by any parser.
