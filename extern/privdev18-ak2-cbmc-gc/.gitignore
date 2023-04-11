@@ -6,7 +6,7 @@ src/**/*_y.*
 src/**/*.yy.*
 src/**/*builtin_headers*.inc
 src/cbmc-gc/cbmc-gc
-test
+src/**/test/test
 src/cbmc/src/ansi-c/cprover_library.inc
 src/cbmc/src/ansi-c/file_converter
 src/cbmc/src/ansi-c/library/converter
