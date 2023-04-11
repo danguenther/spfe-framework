@@ -16,3 +16,4 @@ workspace.xml
 prog.txt
 outputRef.txt
 
+build/
