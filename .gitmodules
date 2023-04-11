@@ -1,6 +1,3 @@
-[submodule "extern/privdev18-ak2-aby"]
-	path = extern/privdev18-ak2-aby
-	url = https://bitbucket.org/encryptogroup/privdev18-ak2-aby.git
 [submodule "extern/privdev18-ak2-cbmc-gc"]
 	path = extern/privdev18-ak2-cbmc-gc
 	url = https://bitbucket.org/encryptogroup/privdev18-ak2-cbmc-gc
