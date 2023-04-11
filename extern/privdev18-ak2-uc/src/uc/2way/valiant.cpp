@@ -876,8 +876,8 @@ uint32_t Valiant_DAG::Node::check_x(Node* child){
  */
 void Valiant_DAG::print_circuit(uint32_t u, uint32_t v, string filename){
     // Output files
-    string circuit_file = OUTPUT_DIRECTORY + filename + CIRCUIT_FILE_FORMAT;
-    string program_file = OUTPUT_DIRECTORY + filename + PROGRAMMING_FILE_FORMAT;
+    string circuit_file = filename + CIRCUIT_FILE_FORMAT;
+    string program_file = filename + PROGRAMMING_FILE_FORMAT;
     const char* circuit = circuit_file.c_str();
     const char* program = program_file.c_str();
     ofstream file;

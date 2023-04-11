@@ -307,7 +307,7 @@ void ValiantUC::topologicalOrdering (uint32_t inputs) {
  * @name file name without suffix
  */
 void ValiantUC::writeOnFile(string name) {
-  string realName = OUTPUT_DIRECTORY;
+  string realName = "";
   realName.append(name);
   string circName = realName;
   string programmingName = realName;

@@ -49,8 +49,8 @@
  * @param output_list resulting output bits
  */
 void eval_UC(string filename, vector<bool>& input_list, vector<bool>& output_list){
-    string circuit = OUTPUT_DIRECTORY + filename + CIRCUIT_FILE_FORMAT;
-    string program = OUTPUT_DIRECTORY + filename + PROGRAMMING_FILE_FORMAT;
+    string circuit = filename + CIRCUIT_FILE_FORMAT;
+    string program = filename + PROGRAMMING_FILE_FORMAT;
 
     ifstream file;
 	file.open (circuit);
